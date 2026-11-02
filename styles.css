@@ -1,0 +1,259 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* outline: 3px solid red; */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 16px;
+  background-color: #f0ffdf;
+  /* background-image: url("/images/background.png");
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  /* background-size: cover; /* Resizes the image to cover the entire screen */
+  /* background-position: center; Centers the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  color: #ff0060;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* Semi-transparent background */
+  background-color: rgb(255, 0, 96, 0.1);
+  /* The blur effect that creates the "glass" look */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  /* Subtle light border to simulate glass edges */
+  border: 1px solid rgba(255, 0, 96, 0.985);
+  border-radius: 50px;
+  /* Smooth transition for hover effects */
+  transition: all 0.3s ease;
+
+  /* Drop shadow and inner shadow for depth */
+  box-shadow:
+    2px 10px 30px rgba(255, 0, 96, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  align-items: center;
+  padding: 6px 18px;
+  position: sticky;
+  top: 5px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-btns li {
+  font: 25px;
+  padding: 12px;
+  border-radius: 50px;
+  transition: 250ms ease-in-out;
+}
+
+.nav-btns li:hover {
+  cursor: pointer;
+  color: #f0ffdf;
+  background: rgb(255, 0, 96);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Active/Click State */
+.nav-btns li:active {
+  transform: translateY(0);
+}
+
+main {
+  min-height: calc(100vh - 32px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border: none;
+  box-shadow:
+    0 10px 30px rgb(255, 0, 96),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.intro {
+  color: #ff0060;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  align-items: center;
+  padding: 50px 0px 185px 0px;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro-name {
+  font-size: 80px;
+  margin: 0;
+}
+
+.intro-title {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.intro-tagline {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.intro-skills {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.intro-btn {
+  font-size: 15px;
+  margin: 0;
+  padding: 12px;
+  width: 100%;
+  max-width: 250px;
+  border: none;
+  border-radius: 20px;
+  color: #f0ffdf;
+  background-color: #5fd728;
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: 250ms ease-in-out;
+}
+
+.intro-btn:hover {
+  background-color: rgba(255, 0, 98, 0.501);
+  box-shadow: 0px 6px 12px #ff0060;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color: #f0ffdf;
+  background-color: #ff0060;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.about-container {
+  margin: 0px 200px;
+}
+
+.green-btn {
+  font-size: 15px;
+  margin: 0;
+  padding: 12px;
+  width: 100%;
+  max-width: 250px;
+  border: none;
+  border-radius: 20px;
+  color: #f0ffdf;
+  background-color: #5fd728;
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transition: 250ms ease-in-out;
+}
+
+.green-btn:hover {
+  background-color: rgba(253, 144, 186, 0.501);
+  box-shadow: 0px 6px 12px rgba(7, 248, 3, 0.477);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+footer {
+  font-size: 18px;
+  width: 100%;
+  color: #ff0060;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* Semi-transparent background */
+  background-color: rgb(255, 0, 96, 0.1);
+  /* The blur effect that creates the "glass" look */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  /* Subtle light border to simulate glass edges */
+  border: 1px solid rgba(255, 0, 96, 0.985);
+  border-radius: 50px;
+  /* Smooth transition for hover effects */
+  transition: all 0.3s ease;
+
+  /* Drop shadow and inner shadow for depth */
+  box-shadow:
+    2px 10px 30px rgba(228, 164, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  align-items: center;
+  padding: 6px 18px;
+  position: sticky;
+  top: 5px;
+}
+
+footer ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 10px;
+  border-radius: 50px;
+  transition: 250ms ease-in-out;
+}
+
+footer ul li:hover {
+  color: #f0ffdf;
+  background: rgb(255, 0, 96);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+/* Active/Click State */
+footer ul li:active {
+  transform: translateY(0);
+}
