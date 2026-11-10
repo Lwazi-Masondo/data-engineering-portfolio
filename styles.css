@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Diphylleia&family=Kite+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Diphylleia&family=Kite+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -10,43 +10,40 @@ body {
   margin: 0;
   min-height: 100vh;
   padding: 16px;
-  background-color: #f0ffdf;
-  /* background-image: url("/images/background.png");
+  background-color: #e1f1f4;
+  /* background-image: url("/images/Minimal_Mint_Background.png");
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  /* background-size: cover; /* Resizes the image to cover the entire screen */
+  /*background-size: cover; Resizes the image to cover the entire screen */
   /* background-position: center; Centers the image */
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 50px;
   align-items: center;
-  /* font-family: "Kite One", sans-serif; */
-  font-family: "Diphylleia", serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 header {
   width: 100%;
-  color: #ff0060;
+  color: #e1f1f4;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   /* Semi-transparent background */
-  background-color: rgb(255, 0, 96, 0.1);
+  background-color: #516b6b60;
   /* The blur effect that creates the "glass" look */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
   /* Subtle light border to simulate glass edges */
-  border: 1px solid rgba(255, 0, 96, 0.985);
+  border: 2px solid #516b6b;
   border-radius: 50px;
   /* Smooth transition for hover effects */
   transition: all 0.3s ease;
 
   /* Drop shadow and inner shadow for depth */
-  box-shadow:
-    2px 10px 30px rgba(255, 0, 96, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 10px 30px rgba(27, 7, 0, 0.441);
   align-items: center;
-  padding: 3px 24px;
+  padding: 3px 26px;
   position: sticky;
   top: 5px;
 }
@@ -62,7 +59,7 @@ header {
 }
 
 .nav-btns li {
-  font: 25px;
+  font: 28px;
   padding: 12px;
   border-radius: 50px;
   transition: 250ms ease-in-out;
@@ -70,10 +67,10 @@ header {
 
 .nav-btns li:hover {
   cursor: pointer;
-  color: #f0ffdf;
-  background: rgb(255, 0, 96);
+  color: #6ef127;
+  background: #516b6b;
   box-shadow:
-    0 4px 30px rgba(0, 0, 0, 0.2),
+    0 4px 30px rgba(0, 0, 0, 0.323),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
 }
@@ -97,18 +94,18 @@ main {
   max-width: 400px;
   border: none;
   box-shadow:
-    0 10px 30px rgb(255, 0, 96),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    0 10px 30px #5fd728,
+    0 6px 20px 0 rgba(0, 0, 0, 0.351);
 }
 
 .intro {
-  color: #ff0060;
+  color: #516b6b;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 200px;
   align-items: center;
-  padding: 50px 0px 185px 0px;
+  padding: 50px 0px 190px 0px;
 }
 
 .intro-container {
@@ -126,6 +123,7 @@ main {
   font-size: 30px;
   font-weight: normal;
   margin: 0;
+  color: #f04005;
 }
 
 .intro-tagline {
@@ -138,27 +136,29 @@ main {
   font-size: 18px;
   font-weight: normal;
   margin: 0;
+  color: #f04005;
 }
 
 .intro-btn {
   font-size: 15px;
-  margin: 0;
+  margin: 16px auto;
   padding: 12px;
   width: 100%;
   max-width: 250px;
   border: none;
   border-radius: 20px;
-  color: #f0ffdf;
-  background-color: #5fd728;
+  color: #516b6b;
+  background-color: #6ef127;
   box-shadow:
-    0 4px 30px rgba(0, 0, 0, 0.2),
+    0 4px 30px rgba(110, 241, 39),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
   transition: 250ms ease-in-out;
 }
 
 .intro-btn:hover {
-  background-color: rgba(255, 0, 98, 0.501);
-  box-shadow: 0px 6px 12px #ff0060;
+  color: #f04005;
+  background-color: #c1ff9b;
+  box-shadow: 0px 6px 12px #6ef127;
   transform: translateY(-2px);
   cursor: pointer;
 }
@@ -171,9 +171,9 @@ main {
   justify-content: center;
   align-items: center;
   height: auto;
-  color: #f0ffdf;
-  background-color: #ff0060;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19);
+  color: #e1f1f4;
+  background-color: #516b6b;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   padding: 20px;
 }
@@ -196,7 +196,7 @@ main {
   max-width: 250px;
   border: none;
   border-radius: 20px;
-  color: #f0ffdf;
+  color: #e1f1f4;
   background-color: #5fd728;
   box-shadow:
     0 4px 30px rgba(0, 0, 0, 0.2),
@@ -206,14 +206,15 @@ main {
 }
 
 .green-btn:hover {
-  background-color: rgba(253, 144, 186, 0.501);
-  box-shadow: 0px 6px 12px rgba(7, 248, 3, 0.477);
+  color: #f04005;
+  background-color: #c1ff9b;
+  box-shadow: 0px 6px 12px #6ef127;
   transform: translateY(-2px);
   cursor: pointer;
 }
 
 .resume-container {
-  border: 2px dashed #5fd728;
+  border: 2px dashed #6ef127;
   border-radius: 20px;
   padding: 12px 12px;
   margin-top: 30px;
@@ -223,15 +224,61 @@ main {
   padding: 0;
 }
 
+.portfolio {
+  color: #e1f1f4;
+  background-color: #516b6b;
+  margin-top: 100px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.portfolio-intro {
+  text-align: center;
+}
+
+.portfolio-title {
+  color: #f04005;
+}
+
+.project-container {
+  display: flex;
+  gap: 50px;
+  padding: 40px 40px;
+}
+
+.project-img {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: #c1ff9b;
+  border: 6px solid #f04005;
+  border-radius: 20px;
+  box-shadow:
+    3px 6px 12px rgba(0, 0, 0, 0.6),
+    inset 2px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-details h2 {
+  margin: 0;
+}
+
 footer {
   font-size: 18px;
   width: 100%;
-  color: #ff0060;
+  color: #e1f1f4;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   /* Semi-transparent background */
-  background-color: rgb(255, 0, 96, 0.1);
+  background-color: #f04005;
   /* The blur effect that creates the "glass" look */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
