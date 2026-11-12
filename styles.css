@@ -62,16 +62,31 @@ header {
   display: flex;
   gap: 20px;
   list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-button a {
   text-decoration: none;
   color: inherit;
+  display: block; /* Fills the entire li space */
+  padding: 15px; /* Makes the whole padded area clickable */
 }
 
 .nav-button {
   font: 28px;
-  padding: 12px;
+
   border-radius: 50px;
   transition: 250ms ease-in-out;
 }
@@ -283,13 +298,72 @@ main {
   margin: 0;
 }
 
+.contact {
+  color: #e1f1f4;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  border-radius: 20px;
+  background-color: #516b6b;
+  padding: 40px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+  gap: 40px;
+}
+
+.contact-title {
+  margin: 0;
+  text-align: center;
+  color: #6ef127;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.contact h3 {
+  margin: 0;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact li {
+  list-style: none;
+  border-bottom: 2px solid #f04005;
+}
+
+.contact-div-one {
+  gap: 50px;
+}
+
+.contact-div-two a {
+  color: #6ef127;
+  text-decoration: none;
+}
+
+.contact-div-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 footer {
   font-size: 18px;
   width: 100%;
   color: #e1f1f4;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   /* Semi-transparent background */
   background-color: #f04005a4;
   /* The blur effect that creates the "glass" look */
@@ -313,10 +387,13 @@ footer ul {
   display: flex;
   gap: 15px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 footer ul li {
-  padding: 10px;
+  margin: 0;
+  padding: 0;
   border-radius: 50px;
   transition: 250ms ease-in-out;
 }
@@ -325,7 +402,7 @@ footer ul li:hover {
   color: #6ef127;
   background: #f04005;
   box-shadow:
-    0 4px 30px rgba(0, 0, 0, 0.2),
+    0 4px 30px rgba(0, 0, 0, 0.229),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
   cursor: pointer;
@@ -334,4 +411,11 @@ footer ul li:hover {
 /* Active/Click State */
 footer ul li:active {
   transform: translateY(0);
+}
+
+footer ul li a {
+  display: block;
+  padding: 12px;
+  color: inherit;
+  text-decoration: none;
 }
